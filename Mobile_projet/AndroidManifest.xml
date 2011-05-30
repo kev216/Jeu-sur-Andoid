@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="Mobile.projet"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/planeicon" android:label="@string/app_name">
+        <activity android:name=".menuView"
+                  android:label="Plane">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".Plane"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".aboutView"
+                  android:label="@string/about">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ruleView"
+                  android:label="@string/rule">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+        
+          <activity android:name=".optionView"
+                  android:label="@string/option">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    <service android:name="MusicServer">
+    	<intent-filter>
+				<action android:name="com.angel.android.MUSIC" />
+				<category android:name="android.intent.category.default" />
+			</intent-filter>
+    </service>
+</application>
+
+    <uses-sdk android:minSdkVersion="3" />
+    
+<uses-permission android:name="android.permission.VIBRATE" />
+</manifest> 

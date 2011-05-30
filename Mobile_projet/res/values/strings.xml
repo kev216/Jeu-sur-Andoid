@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Plane</string>
+    <string name="app_name">plane</string>
+<string name="rule">How to play</string>
+<string name="about">About</string>
+<string name="option">Option</string>
+</resources>
